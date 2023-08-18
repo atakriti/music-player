@@ -1,0 +1,39 @@
+.music{
+    width: min(100%,300px);
+    margin: 0 auto;
+    height:min(100vh,40rem);
+    padding: 1rem;
+    border-radius: 0 20px 0 20px;
+    background: linear-gradient(to right,black,rgb(104, 247, 116));
+    .music-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 10rem;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .music-arrows{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            svg{
+                fill: white;
+                font-size: 2rem;
+                filter: drop-shadow(3px 3px 2px black);
+                transition: 0.2s;
+                cursor: pointer;
+                &:active{
+                    transition: 0.2s;
+                    transform: scale(0.8);
+                }
+            }
+        }
+
+    }
+}
